@@ -66,6 +66,29 @@ h4{
     color: gray;
 }
 
+/* Card Image */
+
+.card{
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    background-color:rgba(0, 0, 0, 0.5);
+}
+
+.card.image-left{
+    background-image: url(../img/img-1.jpg);
+}
+
+.card.image-right{
+    background-image: url(../img/img-3.jpg);
+}
+
+.card.image-center{
+    background-image: url(../img/banner-2.jpg); 
+} 
+
+
 .float{
     background-color: rgb(17, 183, 238);
     float: left;
@@ -81,10 +104,12 @@ h4{
 }
 
 .sidebar{
-    width: 20%;
+    width: calc(25% - 20px);
 }
 
 .menu{
-    width: calc(60% - 40px); 
-    margin: 0 20px;   
+    width: calc(50% - 20px); 
+    margin: 0 30px; 
 }
+
+
