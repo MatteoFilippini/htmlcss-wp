@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .clearfix::after{
@@ -16,15 +17,15 @@
     margin: 0 auto;
 }
 
-/* corpo */
-header{
-    height: 100px;
-    /* background-color: rgb(104, 103, 103); */
-    margin: 20px 0;
+h4,p{
+    color: gray;
+}
+
+h3{
     padding: 10px 0;
 }
 
-/* barra di navigazione */
+/* BARRA NAV */
 a{
     text-decoration: none;
     color: gray;
@@ -36,20 +37,11 @@ a{
     margin-bottom: 20px;
 }
 
-footer{
-    height: 50px;
-    /* background-color: purple; */
-    margin: 10px 0;
-    text-align: center;
-    font-weight: bold;
-    line-height: 50px;
-}
-
-/* pseudo heart */
-footer::after{
-    content: '\2665';
-    color: red;
-    font-size: 20px;
+/* CORPO */
+header{
+    height: 100px;
+    margin: 20px 0;
+    padding: 10px 0;
 }
 
 .core{
@@ -58,22 +50,36 @@ footer::after{
     margin-bottom: 20px;
 }
 
-main{
-    background-color: blue;
+.float{
+    float: left;
+    margin-bottom: 20px;
 }
 
-h4{
-    color: gray;
+.header-main{
+    width: 100%;
 }
 
-/* Card Image */
+.sidebar{
+    width: calc(25% - 20px);
+}
 
+.menu{
+    width: calc(50% - 20px); 
+    margin: 0 30px; 
+}
+
+
+
+
+/* CARD IMAGE */
 .card{
     height: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 10px;
     background-color:rgba(0, 0, 0, 0.5);
+    background-position:center;
+    border: 1px solid red;
 }
 
 .card.image-left{
@@ -88,28 +94,18 @@ h4{
     background-image: url(../img/banner-2.jpg); 
 } 
 
-
-.float{
-    background-color: rgb(17, 183, 238);
-    float: left;
-    margin-bottom: 20px;
-    /* da togliere */
-    height: 500px;
+/* FOOTER */
+footer{
+    height: 50px;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
 }
 
-.header-main{
-    /* da togliere */
-    height: 100px;
-    width: 100%;
+/* PSEUDO HEART */
+footer::after{
+    content: '\2665';
+    color: red;
+    font-size: 20px;
 }
-
-.sidebar{
-    width: calc(25% - 20px);
-}
-
-.menu{
-    width: calc(50% - 20px); 
-    margin: 0 30px; 
-}
-
-
